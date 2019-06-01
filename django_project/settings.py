@@ -25,7 +25,7 @@ SECRET_KEY=os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mydjangobloggingapp.herokuapp.com']
+ALLOWED_HOSTS = ['mydjangobloggingapp.herokuapp.com','localhost']
 
 
 # Application definition
@@ -61,7 +61,7 @@ import os.path
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'/blog/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
