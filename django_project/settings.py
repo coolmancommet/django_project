@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['mydjangobloggingapp.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'blog'
+    
     'users.apps.UsersConfig',
     'blog.apps.BlogConfig',
     'crispy_forms',
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'django_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'blog/templates/blog')],
+        'DIRS': [os.path.join(BASE_DIR, 'django_blog/blog/templates/blog')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
