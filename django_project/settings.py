@@ -61,7 +61,7 @@ import os.path
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'django_project/blog/templates')],
+        'DIRS': [os.path.join(BASE_DIR,'/users/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
