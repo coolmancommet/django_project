@@ -54,6 +54,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'django_project.urls'
+import os.path
+Temp_Path = os.path.realpath('.')
+TEMPLATE_DIRS = (
+    Temp_Path +"/template"
+)
 
 TEMPLATES = [
     {
